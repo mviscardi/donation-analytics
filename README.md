@@ -20,4 +20,4 @@ We have included unit tests in the insight_testsuite folder, specifically to tes
 - test_2_invalid_percentage: percentage defaults to 50 when empty or invalid
 - test_2_corrupted_name: names are stripped of leading/trailing spaces and periods
 - test_2_negative_amt: negative transaction amounts are skipped
-- test_decreasing_years: decreasing years do not create extra repeat donors
+- test_2_decreasing_years: decreasing years do not create extra repeat donors
