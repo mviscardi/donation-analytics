@@ -1,5 +1,5 @@
 # Description
-We solve the donation analytics challenge for the Insight Data Engineering program.  Our directory structure is the same as the one in the instructions for the challenge at https://github.com/InsightDataScience/donation-analytics/ .
+We solve the donation analytics challenge for the Insight Data Engineering program.  The instructions for the challenge can be found at https://github.com/InsightDataScience/donation-analytics/ .
 
 # Running the code
 run.sh located in the root runs src/donation-analytics.py to give a list of repeat donor data.
