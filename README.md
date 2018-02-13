@@ -3,8 +3,11 @@ We solve the donation analytics challenge for the Insight Data Engineering progr
 
 # Running the code
 run.sh located in the root runs src/donation-analytics.py to give a list of repeat donor data.
+
 donation-analytics.py requires three arguments: two input files (a stream and percentile) and one output file.
+
 Example usage:  python ./src/donation-analytics.py ./input/itcont.txt ./input/percentile.txt ./output/repeat_donors.txt
+
 donation-analytics.py only uses the Python Standard library (sys, math).  The code was written and tested in Python 3.6.3.
 
 # About the algorithm
