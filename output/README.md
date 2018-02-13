@@ -1,1 +1,1 @@
-This directory is where we would expect your program to write the requested output files.
+This directory is where donation-analytics.py writes its output file.
