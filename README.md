@@ -8,7 +8,7 @@ donation-analytics.py requires three arguments: two input files (a stream and pe
 
 Example usage:  python ./src/donation-analytics.py ./input/itcont.txt ./input/percentile.txt ./output/repeat_donors.txt
 
-donation-analytics.py only uses the Python Standard Library (sys, math).  The code was written and tested in Python 3.6.3.
+donation-analytics.py only uses the Python Standard Library (sys, math).  The code was written and tested in Python 3.6.3 on a Mac OS X 10.11.4 machine.
 
 # About the algorithm
 We read through the input file line by line, parsing the relevant data and skipping lines with invalid data.  We place these into a dictionary whose keys are donor ids, and whose values are lists of donation recipients/years/amounts, giving an O(1) lookup time on average.  We then query the dictionary at each line to find the appropriate repeat donors.  We output the percentage of repeat donors, their total donation amount, and their total number of donations on each line.
