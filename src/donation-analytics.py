@@ -1,3 +1,9 @@
+# Name: donation-analytics.py
+# Description: Solution to Insight Data Engineering challenge on donation analytics
+# Author: Michael Viscardi
+# Date: 2/12/18
+# GitHub: https://github.com/symplectic314/donation-analytics
+
 import sys
 import math
 
