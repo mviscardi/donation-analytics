@@ -10,7 +10,10 @@ percentile_file    = open(percentile_path, 'r')
 repeat_donors_file = open(output_path,     'w')
 
 # The percentile to be computed
-percentile = int(percentile_file.readline())
+try:
+  percentile = int(percentile_file.readline())
+except ValueError or percentile < 0 or percentile > 100:
+  percentile = 50
 
 # A dictionary of donations
 # Keys: unique donor id = (name, zip_code)
@@ -34,11 +37,12 @@ for line in itcont_file:
   other_id        = line_data[15]
 
   # Skip line if relevant data is invalid
-  if (len(transaction_dt) < 8 or
-      len(zip_code)       < 5 or
-      not name                or
-      not cmte_id             or
-      not transaction_amt     or
+  if (len(transaction_dt) < 8     or
+      len(zip_code)       < 5     or
+      not name                    or
+      not cmte_id                 or
+      not transaction_amt         or
+      float(transaction_amt) < 0  or
       other_id):
     continue
 
